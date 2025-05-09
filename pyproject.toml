@@ -1,0 +1,10 @@
+[project]
+name = "fabric-sqlmesh"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "sqlmesh[mssql-odbc] @ git+https://github.com/mattiasthalen/sqlmesh.git@add-pyodbc-option-to-mssql",
+]
