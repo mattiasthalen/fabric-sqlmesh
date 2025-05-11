@@ -1,7 +1,7 @@
 MODEL (
   name sqlmesh_example.full_model,
   kind FULL,
-  cron '@daily',
+  cron '*/5 * * * *',
   grain item_id,
   audits (assert_positive_order_ids),
 );

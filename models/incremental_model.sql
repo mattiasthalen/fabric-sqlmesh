@@ -4,7 +4,7 @@ MODEL (
     time_column event_date
   ),
   start '2020-01-01',
-  cron '@daily',
+  cron '*/5 * * * *',
   grain (id, event_date)
 );
 
