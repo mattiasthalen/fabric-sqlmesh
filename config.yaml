@@ -1,0 +1,18 @@
+gateways:
+  fabric:
+    connection:
+      type: mssql
+      host: {{ env_var('fabric__host') }}
+      database: {{ env_var('fabric__database') }}
+      user: {{ env_var('fabric__client_id') }}
+      password: {{ env_var('fabric__client_secret') }}
+      driver: pyodbc
+      driver_name: ODBC Driver 18 for SQL Server
+      odbc_properties:
+        Authentication: ActiveDirectoryServicePrincipal
+
+default_gateway: fabric
+
+model_defaults:
+  dialect: duckdb
+  start: 2025-05-09
