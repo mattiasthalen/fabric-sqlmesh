@@ -5,11 +5,17 @@
         "ghcr.io/jlaundry/devcontainer-features/mssql-odbc-driver:1": {},
         "ghcr.io/va-h/devcontainers-features/uv:1": {}
     },
+    "runArgs": [
+        "--env-file", "${localWorkspaceFolder}/.env"
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
                 "eamodio.gitlens"
-            ]
+            ],
+            "settings": {   
+                "files.eol": "\n"
+            }
         }
     }
 }
