@@ -11,7 +11,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "humao.rest-client"
             ],
             "settings": {   
                 "files.eol": "\n"

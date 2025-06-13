@@ -7,5 +7,5 @@ requires-python = ">=3.11, <3.12"
 dependencies = [
     "dlt[mssql]>=1.10.0",
     "dotenv>=0.9.9",
-    "sqlmesh[mssql-odbc] @ git+https://github.com/mattiasthalen/sqlmesh.git@add-pyodbc-option-to-mssql",
+    "sqlmesh[mssql-odbc]",
 ]
